@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background: rgb(0, 0, 0);
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Главная секция */
+.hero-section {
+    background: url(/image/2025-bmw-m5-frozen-deep-grey-19.jpg) center/cover no-repeat;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    inset: 0;
+    position: absolute;
+}
+
+.hero-content {
+    position: relative;
+}
+
+/* О машине */
+/* Фоточки, видосики */
+video {
+    object-fit: cover;
+}
+
+.mb-96 {
+    margin-bottom: 96px;
+}
+
+/* Характеристики */
+.specs-table {
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.specs-table th,
+.specs-table td {
+    padding: 14px;
+}
+
+.specs-table th {
+    background-color: rgb(0, 0, 0, 0.6);
+}
+
+.specs-table td {
+    background-color: rgba(255, 255, 255, 0.03);
+    color: #e0e0e0;
+    font-style: italic;
+}
+
+.specs-table tr:not(:last-child) {
+    border-bottom: 1px solid rgba(231, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+
+    .specs-table th,
+    .specs-table td {
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Градиент на фон */
+.wrapper {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 40%, rgba(56, 6, 9, 1) 100%);
+}
