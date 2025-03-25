@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/image/favicon.png" type="image/x-icon"><!-- Иконка сайта -->
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script><!-- Отправка email -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <!-- Иконки FontAwesome -->
+  <script src="https://kit.fontawesome.com/b38ff20c68.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/css/aos.css"><!-- Для анимаций -->
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Imba</title>
+</head>
+
+<body>
+
+  <section class="hero-section mb-5"><!-- Главная секция -->
+    <div class="hero-overlay"></div><!-- Затенение фона -->
+    <div class="container hero-content">
+      <h1 class="display-3 mb-3" data-aos="fade-down">BMW M5 G90</h1>
+      <p class="lead mb-4" data-aos="fade-up" data-aos-delay="300">Превосходство в каждой детали</p>
+      <button class="test-drive-btn" data-aos="fade-up" data-aos-delay="700">Записаться на тест-драйв</button>
+      <script>
+        document.querySelector('.test-drive-btn').addEventListener('click', function () {
+          document.querySelector('.test-drive').scrollIntoView({
+            behavior: 'smooth'
+          });
+        });
+      </script>
+    </div>
+  </section>
+
+  <div class="wrapper"><!-- Для градиента -->
+
+    <section class="py-5 text-center"><!-- О машине -->
+      <div class="container">
+        <div class="mb-6">
+          <h2 class="display-7" data-aos="fade-right">Абсолютная мощь</h2>
+        </div>
+        <div class="mb-6">
+          <p class="lead text-secondary" data-aos="fade-left" data-aos-delay="200">Новый BMW M5 G90 — воплощение
+            динамики,
+            инноваций и изысканного стиля. <br>Оснащённый мощнейшим гибридным двигателем мощностью 727 л.с., он
+            разгоняется
+            до 100 км/ч всего за 3.2 секунды. <br>Полноприводная система M xDrive обеспечивает идеальное сцепление с
+            дорогой.</p>
+        </div>
+    </section>
+
+    <section class="py-5"> <!-- Фоточки, видосики -->
+      <div class="container">
+
+        <!-- Видео 1 -->
+        <div class="row mb-96 align-items-center">
+
+          <!-- Текст слева -->
+          <div class="col-md-5 d-flex flex-column justify-content-center">
+            <h2 class="mb-3" data-aos="fade-left">Безупречная динамика</h2>
+            <p class="text-secondary" data-aos="fade-left" data-aos-delay="100">
+              Каждая линия кузова, каждая настройка подвески — всё создано для того, чтобы дарить вам чувство
+              абсолютного контроля и непревзойдённой динамики.
+            </p>
+          </div>
+
+          <!-- Видео справа -->
+          <div class="col-md-7">
+            <video autoplay muted loop playsinline class="w-100 rounded shadow" data-aos="fade-left"
+              data-aos-delay="300">
+              <source src="/video/edit-green.mp4" type="video/mp4">
+            </video>
+          </div>
+
+        </div>
+
+        <!-- Видео 2 -->
+        <div class="row align-items-center">
+
+          <!-- Видео слева -->
+          <div class="col-md-7">
+            <video autoplay muted loop playsinline class="w-100 rounded shadow" data-aos="fade-right"
+              data-aos-delay="300">
+              <source src="/video/edit-black.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <!-- Текст справа -->
+          <div class="col-md-5 d-flex flex-column justify-content-center align-items-end text-end">
+            <h2 data-aos="fade-right">Притяжение взгляда</h2>
+            <p class="text-secondary" data-aos="fade-right" data-aos-delay="100">
+              Дизайн, который невозможно игнорировать. M5 G90 завораживает с любого ракурса.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <section class="py-5"><!-- Технологии будущего -->
+      <div class="container text-center">
+        <h2 class="mb-5" data-aos="fade-up">Технологии будущего</h2>
+        <div class="row g-4">
+          <div class="col-md-4 col-sm-6" data-aos="fade-right">
+            <div class="p-4 bg-gradient rounded shadow h-100">
+              <i class="fas fa-bolt fa-2x mb-3"></i>
+              <h4>750 л.с. мощности</h4>
+              <p class="text-secondary">Максимальная производительность благодаря M Hybrid.</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6" data-aos="fade-up">
+            <div class="p-4 bg-gradient rounded shadow h-100">
+              <i class="fas fa-car fa-2x mb-3"></i>
+              <h4>Полный xDrive</h4>
+              <p class="text-secondary">Интеллектуальная система полного привода.</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12" data-aos="fade-left">
+            <div class="p-4 bg-gradient rounded shadow h-100">
+              <i class="fas fa-brain fa-2x mb-3"></i>
+              <h4>Искусственный интеллект</h4>
+              <p class="text-secondary">Современные ассистенты водителя для безопасности.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="gallery" class="py-5"><!-- Детали, создающие стиль -->
+      <div class="container text-center">
+        <h2 class="mb-5" data-aos="fade-up">Детали, создающие стиль</h2>
+        <div class="video-container position-relative mx-auto" data-aos="zoom-in">
+          <video id="bmwVideo" autoplay muted loop playsinline class="gallery-video shadow-lg rounded-4">
+            <source src="/video/video.mp4" type="video/mp4">
+          </video>
+
+          <div class="volume-control"> <!-- Регулировка звука -->
+            <button id="muteButton" class="mute-btn">
+              <i class="fas fa-volume-mute"></i>
+            </button>
+
+            <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="0" class="volume-slider">
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="specs-section py-5"><!-- Характеристики -->
+      <div class="container">
+        <h1 class="text-center mb-5" data-aos="fade-up">Технические характеристики</h1>
+
+        <div class="table-wrapper" data-aos="fade-up" data-aos-delay="100">
+          <table class="table table-dark table-bordered text-center specs-table">
+            <tbody>
+              <tr>
+                <th scope="row">Мощность</th>
+                <td>700 л.с.</td>
+              </tr>
+              <tr>
+                <th scope="row">Крутящий момент</th>
+                <td>850 Нм</td>
+              </tr>
+              <tr>
+                <th scope="row">Разгон 0-100 км/ч</th>
+                <td>3.2 сек</td>
+              </tr>
+              <tr>
+                <th scope="row">Максимальная скорость</th>
+                <td>305 км/ч</td>
+              </tr>
+              <tr>
+                <th scope="row">Привод</th>
+                <td>Полный xDrive</td>
+              </tr>
+              <tr>
+                <th scope="row">Трансмиссия</th>
+                <td>8-ступенчатая M Steptronic</td>
+              </tr>
+              <tr>
+                <th scope="row">Двигатель</th>
+                <td>4.4 л V8 TwinPower Turbo</td>
+              </tr>
+              <tr>
+                <th scope="row">Снаряжённая масса</th>
+                <td>2 100 кг</td>
+              </tr>
+              <tr>
+                <th scope="row">Тип гибрида</th>
+                <td>M Hybrid (PHEV)</td>
+              </tr>
+              <tr>
+                <th scope="row">Тип топлива</th>
+                <td>Бензин 98+</td>
+              </tr>
+              <tr>
+                <th scope="row">Объём багажника</th>
+                <td>530 л</td>
+              </tr>
+              <tr>
+                <th scope="row">Расход топлива</th>
+                <td>12 л/100 км</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="py-5 bg-gradient text-center test-drive">
+      <div class="container" data-aos="zoom-in">
+        <h2 class="display-5 mb-4">Готов к испытанию?</h2>
+        <p class="lead mb-4">Запишись на тест-драйв BMW M5 G90 прямо сейчас.</p>
+
+        <!-- Кнопка для открытия формы -->
+        <button class="accordion-toggle">Записаться</button>
+
+        <!-- Контент аккордеона (форма) -->
+        <div class="accordion-content">
+          <form id="testDriveForm" novalidate>
+            <input class="input" type="text" name="name" placeholder="ФИО" required />
+            <div class="field-error-message" id="nameError"></div>
+
+            <input class="input" type="tel" name="phone" placeholder="Телефон" required />
+            <div class="field-error-message" id="phoneError"></div>
+
+            <input class="input" type="email" name="email" placeholder="Электронная почта" required />
+            <div class="field-error-message" id="emailError"></div>
+
+            <input class="input" type="date" name="date" required id="datePicker" />
+            <div class="field-error-message" id="dateError"></div>
+
+            <input class="input" type="time" name="time" required id="timePicker" />
+            <div class="field-error-message" id="timeError"></div>
+
+            <button type="submit" class="submit-btn">Отправить заявку</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Модальное окно успеха -->
+    <div id="successModal" class="modal">
+      <div class="modal-content">
+        <h2>Спасибо за заявку!</h2>
+        <p>Вы успешно записались на тест-драйв.<br />В ближайшее время вам придёт напоминание на электронную почту.</p>
+        <button class="close-modal">Закрыть</button>
+      </div>
+    </div>
+
+
+  </div>
+
+  <footer class="py-4 text-center text-secondary">
+    <div class="container">
+      &copy; 2025 BMW M. Все права защищены.
+    </div>
+  </footer>
+
+
+  <script src="/js/volumeSlider.js"></script><!-- Регулировка звука видео -->
+  <script src="/js/aos.js"></script><!-- Анимации при скроле -->
+  <script src="/js/bootstrap.bundle.min.js"></script>
+  <script><!-- Анимация при скроле -->
+    AOS.init({
+      duration: 1000,
+    });
+  </script>
+  <script src="/js/test-drive.js"></script><!-- Выезжает форма для записи при нажатии кнопки -->
+</body>
+
+</html>
